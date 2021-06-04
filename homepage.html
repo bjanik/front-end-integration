@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/homepage.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="gameon" src="./media/img/GameOn.png">
+        </div>
+        <ul class='nav-links'>
+            <li>Event details</li>
+            <li>About us</li>
+            <li>Contact</li>
+            <li>Pass events</li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"><img src="./media/img/bgimg.jpg"></div>
+        <div class="text"><h1>US Nationwide<br>Game-a-Thon</h1></div>
+        <div class="text"><h3>Do you live to game? Our next gaming event <br>is now accepting reservations<br>for players, but spots are limited.</h3></div>
+        <button id="signon">Sign Up Now</button>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <form class='form'>
+                <label for='firstname'>First name</label>
+                <input type="text" name="firstname" required/>
+                <label for='lastname'>Last name</label>
+                <input type="text" name="lastname" required/>
+                <label for='email'>Email </label>
+                <input type="email" name="email" required/>
+                <label for='birthdate'>Birthdate</label>
+                <input type="date" name="birthdate" required/>
+                <label for='tournaments'>How many tournaments have you attended?</label>
+                <input type="text" name="tournaments" required/>
+                <div class='locations'>
+                    <label for='location'>Location</label><br>
+                    <input type="radio" name="location" value='New York'/>New York
+                    <input type="radio" name="location" value='San Fransisco'/>San Fransisco
+                    <input type="radio" name="location" value='Seattle'/>Seattle
+                    <input type="radio" name="location" value='Chicago'/>Chicago
+                    <input type="radio" name="location" value='Boston'/>Boston
+                    <input type="radio" name="location" value='Portland'/>Portland
+                </div>
+                <div>
+                    <input type="checkbox" name="test" value=""/> I accept the terms
+                </div>
+                <div>
+                    <input type="checkbox" name="test" value=""/> I accept receiving newsletters
+                </div>
+                <button class="inside-modal" id="go">Go</button>
+            </form>
+            <div class="submitmessage">
+                <h2>Thank you for submitting your registration details</h2>
+                <button class="inside-modal" id="closeButton">Close</button>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br><p id="copyright">Copyright 2014 - 2020, GameOn, inc</p>
+    </footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
